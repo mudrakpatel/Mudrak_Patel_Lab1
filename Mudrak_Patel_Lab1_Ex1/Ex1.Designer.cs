@@ -35,7 +35,7 @@
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnSum = new System.Windows.Forms.Button();
             this.btnAverage = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxInput = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lstBoxGrades
@@ -63,6 +63,7 @@
             this.btnInput.TabIndex = 2;
             this.btnInput.Text = "Input";
             this.btnInput.UseVisualStyleBackColor = true;
+            this.btnInput.Click += new System.EventHandler(this.btnInput_Click);
             // 
             // btnClear
             // 
@@ -72,6 +73,7 @@
             this.btnClear.TabIndex = 3;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnRemove
             // 
@@ -81,6 +83,7 @@
             this.btnRemove.TabIndex = 4;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnSum
             // 
@@ -100,19 +103,19 @@
             this.btnAverage.Text = "Average";
             this.btnAverage.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtBoxInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(140, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtBoxInput.Location = new System.Drawing.Point(140, 41);
+            this.txtBoxInput.Name = "txtBoxInput";
+            this.txtBoxInput.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxInput.TabIndex = 7;
             // 
             // Ex1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 325);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxInput);
             this.Controls.Add(this.btnAverage);
             this.Controls.Add(this.btnSum);
             this.Controls.Add(this.btnRemove);
@@ -136,7 +139,7 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnSum;
         private System.Windows.Forms.Button btnAverage;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxInput;
     }
 }
 
