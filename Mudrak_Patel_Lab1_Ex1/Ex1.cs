@@ -33,6 +33,7 @@ namespace Mudrak_Patel_Lab1_Ex1
             {
                 MessageBox.Show("The input must be an integer.\n"+exception.Message,"Wrong input!");
             }
+            txtBoxInput.Clear();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -42,7 +43,32 @@ namespace Mudrak_Patel_Lab1_Ex1
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            lstBoxGrades.Items.Remove(lstBoxGrades.SelectedItem);
+            try
+            {
+                    lstBoxGrades.Items.Remove(lstBoxGrades.SelectedItem);
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Multiple selected items will be removed in sequence.",
+                    "Invalid operation");
+            }
+        }
+
+        private void btnSum_Click(object sender, EventArgs e)
+        {
+            var sumOfElements = 0;
+            foreach (var listItem in lstBoxGrades.Items)
+            {
+                try
+                {
+                    sumOfElements += Convert.ToInt32(listItem);
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.Message,"Int conversion exception");
+                }
+            }
+            MessageBox.Show(Convert.ToString(sumOfElements),"Sum of grades");
         }
     }
 }

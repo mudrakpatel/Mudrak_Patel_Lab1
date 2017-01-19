@@ -43,6 +43,7 @@
             this.lstBoxGrades.FormattingEnabled = true;
             this.lstBoxGrades.Location = new System.Drawing.Point(13, 67);
             this.lstBoxGrades.Name = "lstBoxGrades";
+            this.lstBoxGrades.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lstBoxGrades.Size = new System.Drawing.Size(120, 186);
             this.lstBoxGrades.TabIndex = 0;
             // 
@@ -93,6 +94,7 @@
             this.btnSum.TabIndex = 5;
             this.btnSum.Text = "Sum";
             this.btnSum.UseVisualStyleBackColor = true;
+            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
             // 
             // btnAverage
             // 
