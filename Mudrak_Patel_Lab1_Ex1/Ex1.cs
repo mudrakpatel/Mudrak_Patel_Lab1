@@ -22,12 +22,18 @@ namespace Mudrak_Patel_Lab1_Ex1
             int numberToBeAdded;
             try
             {
-                if (txtBoxInput.Text.Equals("") || txtBoxInput.Text == String.Empty)
+                if ((txtBoxInput.Text.Equals("") || txtBoxInput.Text == String.Empty))
                 {
                     MessageBox.Show("Please enter a valid integer.\nAnd donot keep the input empty.", "Warning");
                 }
                 numberToBeAdded = Convert.ToInt32(txtBoxInput.Text);
-                lstBoxGrades.Items.Add(numberToBeAdded);
+                if (numberToBeAdded > 100 || numberToBeAdded < 0)
+                {
+                    MessageBox.Show("Please enter a value in between 0 and 100(both inclusive).","Invalid input!");
+                }
+                else {
+                    lstBoxGrades.Items.Add(numberToBeAdded);
+                }
             }
             catch(Exception exception)
             {
@@ -69,6 +75,25 @@ namespace Mudrak_Patel_Lab1_Ex1
                 }
             }
             MessageBox.Show(Convert.ToString(sumOfElements),"Sum of grades");
+        }
+
+        private void btnAverage_Click(object sender, EventArgs e)
+        {
+            var sumOfElements = 0;
+            var numberOfElements = lstBoxGrades.Items.Count;
+            foreach (var listItem in lstBoxGrades.Items)
+            {
+                try
+                {
+                    sumOfElements += Convert.ToInt32(listItem);
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show(exception.Message, "Int conversion exception");
+                }
+            }
+            var average = sumOfElements / numberOfElements;
+            MessageBox.Show(Convert.ToString(average), "Average of grades");
         }
     }
 }

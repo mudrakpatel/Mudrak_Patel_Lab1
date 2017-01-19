@@ -104,6 +104,7 @@
             this.btnAverage.TabIndex = 6;
             this.btnAverage.Text = "Average";
             this.btnAverage.UseVisualStyleBackColor = true;
+            this.btnAverage.Click += new System.EventHandler(this.btnAverage_Click);
             // 
             // txtBoxInput
             // 
