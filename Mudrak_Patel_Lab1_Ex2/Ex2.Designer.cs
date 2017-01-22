@@ -279,7 +279,7 @@
             this.displayTextBox.Location = new System.Drawing.Point(13, 250);
             this.displayTextBox.Multiline = true;
             this.displayTextBox.Name = "displayTextBox";
-            this.displayTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.displayTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.displayTextBox.Size = new System.Drawing.Size(746, 90);
             this.displayTextBox.TabIndex = 3;
             // 
