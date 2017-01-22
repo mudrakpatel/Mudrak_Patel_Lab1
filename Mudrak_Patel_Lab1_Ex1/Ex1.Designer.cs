@@ -58,7 +58,7 @@
             // 
             // btnInput
             // 
-            this.btnInput.Location = new System.Drawing.Point(140, 67);
+            this.btnInput.Location = new System.Drawing.Point(154, 69);
             this.btnInput.Name = "btnInput";
             this.btnInput.Size = new System.Drawing.Size(75, 23);
             this.btnInput.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(140, 97);
+            this.btnClear.Location = new System.Drawing.Point(154, 99);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(140, 127);
+            this.btnRemove.Location = new System.Drawing.Point(154, 129);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(75, 23);
             this.btnRemove.TabIndex = 4;
@@ -88,7 +88,7 @@
             // 
             // btnSum
             // 
-            this.btnSum.Location = new System.Drawing.Point(140, 157);
+            this.btnSum.Location = new System.Drawing.Point(154, 159);
             this.btnSum.Name = "btnSum";
             this.btnSum.Size = new System.Drawing.Size(75, 23);
             this.btnSum.TabIndex = 5;
@@ -98,7 +98,7 @@
             // 
             // btnAverage
             // 
-            this.btnAverage.Location = new System.Drawing.Point(140, 187);
+            this.btnAverage.Location = new System.Drawing.Point(154, 189);
             this.btnAverage.Name = "btnAverage";
             this.btnAverage.Size = new System.Drawing.Size(75, 23);
             this.btnAverage.TabIndex = 6;
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 325);
+            this.ClientSize = new System.Drawing.Size(252, 325);
             this.Controls.Add(this.txtBoxInput);
             this.Controls.Add(this.btnAverage);
             this.Controls.Add(this.btnSum);

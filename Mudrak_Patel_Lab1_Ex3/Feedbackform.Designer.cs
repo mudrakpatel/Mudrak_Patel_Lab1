@@ -44,12 +44,12 @@
             this.sourceCodeCheckBox = new System.Windows.Forms.CheckBox();
             this.getToSiteLabel = new System.Windows.Forms.Label();
             this.searchEngineRadioButton = new System.Windows.Forms.RadioButton();
-            this.linkFromAnotherSiteRadioButtonRadioButton = new System.Windows.Forms.RadioButton();
+            this.linkFromAnotherSiteRadioButton = new System.Windows.Forms.RadioButton();
             this.deitelWebsiteRadioButton = new System.Windows.Forms.RadioButton();
             this.bookReferenceRadioButton = new System.Windows.Forms.RadioButton();
-            this.oterOptionRadioButton = new System.Windows.Forms.RadioButton();
-            this.siterateLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.otherOptionRadioButton = new System.Windows.Forms.RadioButton();
+            this.siteRateLabel = new System.Windows.Forms.Label();
+            this.rateOptionsComboBox = new System.Windows.Forms.ComboBox();
             this.submitButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -202,6 +202,7 @@
             // searchEngineRadioButton
             // 
             this.searchEngineRadioButton.AutoSize = true;
+            this.searchEngineRadioButton.Checked = true;
             this.searchEngineRadioButton.Location = new System.Drawing.Point(27, 253);
             this.searchEngineRadioButton.Name = "searchEngineRadioButton";
             this.searchEngineRadioButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -211,17 +212,16 @@
             this.searchEngineRadioButton.Text = "Search engine";
             this.searchEngineRadioButton.UseVisualStyleBackColor = true;
             // 
-            // linkFromAnotherSiteRadioButtonRadioButton
+            // linkFromAnotherSiteRadioButton
             // 
-            this.linkFromAnotherSiteRadioButtonRadioButton.AutoSize = true;
-            this.linkFromAnotherSiteRadioButtonRadioButton.Location = new System.Drawing.Point(128, 253);
-            this.linkFromAnotherSiteRadioButtonRadioButton.Name = "linkFromAnotherSiteRadioButtonRadioButton";
-            this.linkFromAnotherSiteRadioButtonRadioButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.linkFromAnotherSiteRadioButtonRadioButton.Size = new System.Drawing.Size(131, 17);
-            this.linkFromAnotherSiteRadioButtonRadioButton.TabIndex = 16;
-            this.linkFromAnotherSiteRadioButtonRadioButton.TabStop = true;
-            this.linkFromAnotherSiteRadioButtonRadioButton.Text = "Links from another site";
-            this.linkFromAnotherSiteRadioButtonRadioButton.UseVisualStyleBackColor = true;
+            this.linkFromAnotherSiteRadioButton.AutoSize = true;
+            this.linkFromAnotherSiteRadioButton.Location = new System.Drawing.Point(128, 253);
+            this.linkFromAnotherSiteRadioButton.Name = "linkFromAnotherSiteRadioButton";
+            this.linkFromAnotherSiteRadioButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.linkFromAnotherSiteRadioButton.Size = new System.Drawing.Size(131, 17);
+            this.linkFromAnotherSiteRadioButton.TabIndex = 16;
+            this.linkFromAnotherSiteRadioButton.Text = "Links from another site";
+            this.linkFromAnotherSiteRadioButton.UseVisualStyleBackColor = true;
             // 
             // deitelWebsiteRadioButton
             // 
@@ -231,7 +231,6 @@
             this.deitelWebsiteRadioButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.deitelWebsiteRadioButton.Size = new System.Drawing.Size(114, 17);
             this.deitelWebsiteRadioButton.TabIndex = 17;
-            this.deitelWebsiteRadioButton.TabStop = true;
             this.deitelWebsiteRadioButton.Text = "Deitel.com website";
             this.deitelWebsiteRadioButton.UseVisualStyleBackColor = true;
             // 
@@ -243,43 +242,42 @@
             this.bookReferenceRadioButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.bookReferenceRadioButton.Size = new System.Drawing.Size(134, 17);
             this.bookReferenceRadioButton.TabIndex = 18;
-            this.bookReferenceRadioButton.TabStop = true;
             this.bookReferenceRadioButton.Text = "Reference from a book";
             this.bookReferenceRadioButton.UseVisualStyleBackColor = true;
             // 
-            // oterOptionRadioButton
+            // otherOptionRadioButton
             // 
-            this.oterOptionRadioButton.AutoSize = true;
-            this.oterOptionRadioButton.Location = new System.Drawing.Point(528, 253);
-            this.oterOptionRadioButton.Name = "oterOptionRadioButton";
-            this.oterOptionRadioButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.oterOptionRadioButton.Size = new System.Drawing.Size(51, 17);
-            this.oterOptionRadioButton.TabIndex = 19;
-            this.oterOptionRadioButton.TabStop = true;
-            this.oterOptionRadioButton.Text = "Other";
-            this.oterOptionRadioButton.UseVisualStyleBackColor = true;
+            this.otherOptionRadioButton.AutoSize = true;
+            this.otherOptionRadioButton.Location = new System.Drawing.Point(528, 253);
+            this.otherOptionRadioButton.Name = "otherOptionRadioButton";
+            this.otherOptionRadioButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.otherOptionRadioButton.Size = new System.Drawing.Size(51, 17);
+            this.otherOptionRadioButton.TabIndex = 19;
+            this.otherOptionRadioButton.Text = "Other";
+            this.otherOptionRadioButton.UseVisualStyleBackColor = true;
             // 
-            // siterateLabel
+            // siteRateLabel
             // 
-            this.siterateLabel.AutoSize = true;
-            this.siterateLabel.Location = new System.Drawing.Point(29, 277);
-            this.siterateLabel.Name = "siterateLabel";
-            this.siterateLabel.Size = new System.Drawing.Size(70, 13);
-            this.siterateLabel.TabIndex = 20;
-            this.siterateLabel.Text = "Rate our site:";
+            this.siteRateLabel.AutoSize = true;
+            this.siteRateLabel.Location = new System.Drawing.Point(29, 277);
+            this.siteRateLabel.Name = "siteRateLabel";
+            this.siteRateLabel.Size = new System.Drawing.Size(70, 13);
+            this.siteRateLabel.TabIndex = 20;
+            this.siteRateLabel.Text = "Rate our site:";
             // 
-            // comboBox1
+            // rateOptionsComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.rateOptionsComboBox.FormattingEnabled = true;
+            this.rateOptionsComboBox.Items.AddRange(new object[] {
             "Amazing     ",
             "Excellent     ",
             "Good     ",
             "Okay     "});
-            this.comboBox1.Location = new System.Drawing.Point(106, 276);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 21;
+            this.rateOptionsComboBox.Location = new System.Drawing.Point(106, 276);
+            this.rateOptionsComboBox.Name = "rateOptionsComboBox";
+            this.rateOptionsComboBox.Size = new System.Drawing.Size(121, 21);
+            this.rateOptionsComboBox.TabIndex = 21;
+            this.rateOptionsComboBox.SelectedIndex = 0;
             // 
             // submitButton
             // 
@@ -289,6 +287,7 @@
             this.submitButton.TabIndex = 22;
             this.submitButton.Text = "Submit";
             this.submitButton.UseVisualStyleBackColor = true;
+            this.submitButton.Click += new System.EventHandler(this.submitButton_Click);
             // 
             // clearButton
             // 
@@ -298,6 +297,7 @@
             this.clearButton.TabIndex = 23;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // FeedbackForm
             // 
@@ -306,12 +306,12 @@
             this.ClientSize = new System.Drawing.Size(705, 346);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.submitButton);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.siterateLabel);
-            this.Controls.Add(this.oterOptionRadioButton);
+            this.Controls.Add(this.rateOptionsComboBox);
+            this.Controls.Add(this.siteRateLabel);
+            this.Controls.Add(this.otherOptionRadioButton);
             this.Controls.Add(this.bookReferenceRadioButton);
             this.Controls.Add(this.deitelWebsiteRadioButton);
-            this.Controls.Add(this.linkFromAnotherSiteRadioButtonRadioButton);
+            this.Controls.Add(this.linkFromAnotherSiteRadioButton);
             this.Controls.Add(this.searchEngineRadioButton);
             this.Controls.Add(this.getToSiteLabel);
             this.Controls.Add(this.sourceCodeCheckBox);
@@ -353,12 +353,12 @@
         private System.Windows.Forms.CheckBox sourceCodeCheckBox;
         private System.Windows.Forms.Label getToSiteLabel;
         private System.Windows.Forms.RadioButton searchEngineRadioButton;
-        private System.Windows.Forms.RadioButton linkFromAnotherSiteRadioButtonRadioButton;
+        private System.Windows.Forms.RadioButton linkFromAnotherSiteRadioButton;
         private System.Windows.Forms.RadioButton deitelWebsiteRadioButton;
         private System.Windows.Forms.RadioButton bookReferenceRadioButton;
-        private System.Windows.Forms.RadioButton oterOptionRadioButton;
-        private System.Windows.Forms.Label siterateLabel;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.RadioButton otherOptionRadioButton;
+        private System.Windows.Forms.Label siteRateLabel;
+        private System.Windows.Forms.ComboBox rateOptionsComboBox;
         private System.Windows.Forms.Button submitButton;
         private System.Windows.Forms.Button clearButton;
     }
