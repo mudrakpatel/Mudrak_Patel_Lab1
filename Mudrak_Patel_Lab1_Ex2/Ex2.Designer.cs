@@ -50,6 +50,7 @@
             this.computerProgrammerRadioButton = new System.Windows.Forms.RadioButton();
             this.computerProgrammerAnalystRadioButton = new System.Windows.Forms.RadioButton();
             this.displayButton = new System.Windows.Forms.Button();
+            this.displayTextBox = new System.Windows.Forms.TextBox();
             this.groupInformationGroupBox.SuspendLayout();
             this.coursesGroupBox.SuspendLayout();
             this.radioButtonsPanel.SuspendLayout();
@@ -82,6 +83,7 @@
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
             this.phoneNumberTextBox.Size = new System.Drawing.Size(219, 20);
             this.phoneNumberTextBox.TabIndex = 11;
+            this.phoneNumberTextBox.MouseLeave += new System.EventHandler(this.phoneNumberTextBox_MouseLeave);
             // 
             // provinceTextBox
             // 
@@ -207,10 +209,10 @@
             // 
             this.computerProgrammerAnalystComboBox.FormattingEnabled = true;
             this.computerProgrammerAnalystComboBox.Items.AddRange(new object[] {
-            "Word Processing",
-            "Advance Programming",
-            "Computer Fundamentals and Software Engineering"});
-            this.computerProgrammerAnalystComboBox.Location = new System.Drawing.Point(13, 48);
+            "Word Processing     ",
+            "Advance Programming     ",
+            "Computer Fundamentals and Software Engineering     "});
+            this.computerProgrammerAnalystComboBox.Location = new System.Drawing.Point(11, 48);
             this.computerProgrammerAnalystComboBox.Name = "computerProgrammerAnalystComboBox";
             this.computerProgrammerAnalystComboBox.Size = new System.Drawing.Size(323, 21);
             this.computerProgrammerAnalystComboBox.TabIndex = 2;
@@ -220,9 +222,9 @@
             // 
             this.computerProgrammerComboBox.FormattingEnabled = true;
             this.computerProgrammerComboBox.Items.AddRange(new object[] {
-            "C Sharp",
-            "Java",
-            "Web Programming"});
+            "C Sharp     ",
+            "Java     ",
+            "Web Programming     "});
             this.computerProgrammerComboBox.Location = new System.Drawing.Point(11, 48);
             this.computerProgrammerComboBox.Name = "computerProgrammerComboBox";
             this.computerProgrammerComboBox.Size = new System.Drawing.Size(323, 21);
@@ -270,12 +272,23 @@
             this.displayButton.TabIndex = 2;
             this.displayButton.Text = "Display";
             this.displayButton.UseVisualStyleBackColor = true;
+            this.displayButton.Click += new System.EventHandler(this.displayButton_Click);
+            // 
+            // displayTextBox
+            // 
+            this.displayTextBox.Location = new System.Drawing.Point(13, 250);
+            this.displayTextBox.Multiline = true;
+            this.displayTextBox.Name = "displayTextBox";
+            this.displayTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.displayTextBox.Size = new System.Drawing.Size(746, 90);
+            this.displayTextBox.TabIndex = 3;
             // 
             // Ex2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 348);
+            this.Controls.Add(this.displayTextBox);
             this.Controls.Add(this.displayButton);
             this.Controls.Add(this.coursesGroupBox);
             this.Controls.Add(this.groupInformationGroupBox);
@@ -287,6 +300,7 @@
             this.radioButtonsPanel.ResumeLayout(false);
             this.radioButtonsPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -314,6 +328,7 @@
         private System.Windows.Forms.ListBox computerProgrammerListBox;
         private System.Windows.Forms.ListBox computerProgrammerAnalystListBox;
         private System.Windows.Forms.Button displayButton;
+        private System.Windows.Forms.TextBox displayTextBox;
     }
 }
 

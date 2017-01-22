@@ -22,10 +22,11 @@ namespace Mudrak_Patel_Lab1_Ex2
         {
             switch (computerProgrammerAnalystRadioButton.Checked)
             {
-                case true: computerProgrammerAnalystComboBox.Show();
-                           computerProgrammerAnalystListBox.Show();
-                           computerProgrammerComboBox.Hide();
-                           computerProgrammerListBox.Hide();
+                case true:
+                    computerProgrammerAnalystComboBox.Show();
+                    computerProgrammerAnalystListBox.Show();
+                    computerProgrammerComboBox.Hide();
+                    computerProgrammerListBox.Hide();
                     break;
             }
         }
@@ -58,7 +59,7 @@ namespace Mudrak_Patel_Lab1_Ex2
             }
             catch (Exception exception)
             {
-                MessageBox.Show(exception.Message,"Exception occured!");
+                MessageBox.Show(exception.Message, "Exception occured!");
             }
         }
 
@@ -83,15 +84,71 @@ namespace Mudrak_Patel_Lab1_Ex2
 
         private void nameTextBox_Leave(object sender, EventArgs e)
         {
-            validateTextBox(nameTextBox, new Regex(@"^((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}$"), "Please enter a valid phone number with country code.\nDonot leave this textbox empty or null.");
+            if (String.IsNullOrEmpty(nameTextBox.Text))
+            {
+                MessageBox.Show("Please enter a name","Validation warning!");
+            }
         }
 
-        private void validateTextBox(TextBox textBoxToValidate, Regex validationExpression, string errorMessageToShow)
+
+        private void phoneNumberTextBox_MouseLeave(object sender, EventArgs e)
         {
-            if (!(validationExpression.IsMatch(textBoxToValidate.Text)) || 
-                (String.IsNullOrWhiteSpace(textBoxToValidate.Text)))
+            if (phoneNumberTextBox.TextLength > 13) {
+                MessageBox.Show("Phone number must be less than 13 characters","Validation warning!");
+            } else if (String.IsNullOrEmpty(phoneNumberTextBox.Text))
             {
-                MessageBox.Show(errorMessageToShow,"Validation error!");
+                MessageBox.Show("Please fill in your phone number","Validation warning!");
+            }
+            else {
+                try {
+                    Convert.ToInt32(phoneNumberTextBox.Text);
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("Please enter a valid phone number.\n"+exception.Message,"Validation warning!");
+                }
+            }
+        }
+
+        private void displayButton_Click(object sender, EventArgs e)
+        {
+            if ((computerProgrammerAnalystRadioButton.Checked) || (computerProgrammerRadioButton.Checked))
+            {
+                if ((String.IsNullOrEmpty(addressTextBox.Text)) ||
+                    (String.IsNullOrEmpty(cityTextBox.Text)) ||
+                   (String.IsNullOrEmpty(postalCodeTextBox.Text)) ||
+                    (String.IsNullOrEmpty(provinceTextBox.Text)))
+                {
+                    MessageBox.Show("Check whether you have filled all the inputs","Input errors!");
+                }
+                else
+                {
+                    if (computerProgrammerAnalystRadioButton.Checked)
+                    {
+                        displayTextBox.Text = "Name: "+nameTextBox.Text + "<---->"
+                                              +"Address: "+addressTextBox.Text+"<---->"
+                                              +"City: "+cityTextBox.Text+ "<---->"
+                                              + "Postal code: "+postalCodeTextBox.Text+ "<---->"
+                                              + "Province: "+provinceTextBox.Text+ "<---->"
+                                              + "Phone: "+phoneNumberTextBox.Text+ "<---->"
+                                              + "Courses: "+">>>"
+                                              +computerProgrammerAnalystComboBox.Text;
+                    }
+                    else if(computerProgrammerRadioButton.Checked)
+                    {
+                        displayTextBox.Text = "Name: " + nameTextBox.Text + "<---->"
+                                              + "Address: " + addressTextBox.Text + "<---->"
+                                              + "City: " + cityTextBox.Text + "<---->"
+                                              + "Postal code: " + postalCodeTextBox.Text + "<---->"
+                                              + "Province: " + provinceTextBox.Text + "<---->"
+                                              + "Phone: " + phoneNumberTextBox.Text + "<---->"
+                                              + "Courses: " + ">>>"
+                                              + computerProgrammerComboBox.Text;
+                    }
+                }
+            } else
+            {
+                MessageBox.Show("Please select a program to register.","Validation error!");
             }
         }
     }
