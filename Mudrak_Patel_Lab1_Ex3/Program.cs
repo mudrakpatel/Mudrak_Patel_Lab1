@@ -16,7 +16,7 @@ namespace Mudrak_Patel_Lab1_Ex3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Feedbackform());
+            Application.Run(new FeedbackForm());
         }
     }
 }

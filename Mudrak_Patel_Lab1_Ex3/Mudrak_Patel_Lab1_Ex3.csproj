@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2808CDFF-3097-4004-9B87-FBC544B2EBE5}</ProjectGuid>
+    <ProjectGuid>{6E1504DF-AD02-4845-8F09-85AFF9372498}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Mudrak_Patel_Lab1_Ex3</RootNamespace>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Feedbackform.cs">
+    <Compile Include="FeedbackForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Feedbackform.Designer.cs">
-      <DependentUpon>Feedbackform.cs</DependentUpon>
+    <Compile Include="FeedbackForm.Designer.cs">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Feedbackform.resx">
-      <DependentUpon>Feedbackform.cs</DependentUpon>
+    <EmbeddedResource Include="FeedbackForm.resx">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
