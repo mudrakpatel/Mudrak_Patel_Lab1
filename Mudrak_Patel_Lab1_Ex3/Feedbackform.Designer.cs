@@ -28,112 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.headingLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.commentssLabel = new System.Windows.Forms.Label();
-            this.commentsTextBox = new System.Windows.Forms.TextBox();
-            this.emailLabel = new System.Windows.Forms.Label();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.likedThingsLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // headingLabel
+            // label2
             // 
-            this.headingLabel.AutoSize = true;
-            this.headingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.headingLabel.Location = new System.Drawing.Point(13, 13);
-            this.headingLabel.Name = "headingLabel";
-            this.headingLabel.Size = new System.Drawing.Size(211, 36);
-            this.headingLabel.TabIndex = 0;
-            this.headingLabel.Text = "Feedback form";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(225, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Please fill this form to help us improve our site: ";
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Please fill out this form to help us improve our site.";
-            // 
-            // nameLabel
-            // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(22, 84);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(41, 13);
-            this.nameLabel.TabIndex = 2;
-            this.nameLabel.Text = "Name: ";
-            // 
-            // nameTextBox
-            // 
-            this.nameTextBox.Location = new System.Drawing.Point(70, 84);
-            this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(246, 20);
-            this.nameTextBox.TabIndex = 3;
-            // 
-            // commentssLabel
-            // 
-            this.commentssLabel.AutoSize = true;
-            this.commentssLabel.Location = new System.Drawing.Point(25, 119);
-            this.commentssLabel.Name = "commentssLabel";
-            this.commentssLabel.Size = new System.Drawing.Size(62, 13);
-            this.commentssLabel.TabIndex = 4;
-            this.commentssLabel.Text = "Comments: ";
-            // 
-            // commentsTextBox
-            // 
-            this.commentsTextBox.Location = new System.Drawing.Point(28, 136);
-            this.commentsTextBox.Multiline = true;
-            this.commentsTextBox.Name = "commentsTextBox";
-            this.commentsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.commentsTextBox.Size = new System.Drawing.Size(288, 75);
-            this.commentsTextBox.TabIndex = 5;
-            this.commentsTextBox.Text = "Enter comments here.";
-            // 
-            // emailLabel
-            // 
-            this.emailLabel.AutoSize = true;
-            this.emailLabel.Location = new System.Drawing.Point(27, 218);
-            this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(78, 13);
-            this.emailLabel.TabIndex = 6;
-            this.emailLabel.Text = "Email address: ";
-            // 
-            // emailTextBox
-            // 
-            this.emailTextBox.Location = new System.Drawing.Point(113, 218);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(203, 20);
-            this.emailTextBox.TabIndex = 7;
-            // 
-            // likedThingsLabel
-            // 
-            this.likedThingsLabel.AutoSize = true;
-            this.likedThingsLabel.Location = new System.Drawing.Point(25, 241);
-            this.likedThingsLabel.Name = "likedThingsLabel";
-            this.likedThingsLabel.Size = new System.Drawing.Size(90, 13);
-            this.likedThingsLabel.TabIndex = 8;
-            this.likedThingsLabel.Text = "Things you liked: ";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Feedback form:";
             // 
             // Feedbackform
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 354);
-            this.Controls.Add(this.likedThingsLabel);
-            this.Controls.Add(this.emailTextBox);
-            this.Controls.Add(this.emailLabel);
-            this.Controls.Add(this.commentsTextBox);
-            this.Controls.Add(this.commentssLabel);
-            this.Controls.Add(this.nameTextBox);
-            this.Controls.Add(this.nameLabel);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.headingLabel);
+            this.ClientSize = new System.Drawing.Size(669, 327);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Name = "Feedbackform";
-            this.Text = "Feedback form";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +72,20 @@
         private System.Windows.Forms.Label emailLabel;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label likedThingsLabel;
+        private System.Windows.Forms.CheckBox siteDesignCheckBox;
+        private System.Windows.Forms.CheckBox linksCheckBox;
+        private System.Windows.Forms.CheckBox easeOfUseCheckBox;
+        private System.Windows.Forms.CheckBox imagesCheckBox;
+        private System.Windows.Forms.CheckBox sourceCodeCheckBox;
+        private System.Windows.Forms.Label getToSiteLabel;
+        private System.Windows.Forms.RadioButton searchEngineRadioButton;
+        private System.Windows.Forms.RadioButton fromAnotherSiteRadioButton;
+        private System.Windows.Forms.RadioButton deitelWebsiteRadioButton;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mudrak_Patel_Lab1_Ex1", "Mu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mudrak_Patel_Lab1_Ex2", "Mudrak_Patel_Lab1_Ex2\Mudrak_Patel_Lab1_Ex2.csproj", "{0F29159C-E850-49C8-AA31-EE59A6921651}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mudrak_Patel_Lab1_Ex3", "Mudrak_Patel_Lab1_Ex3\Mudrak_Patel_Lab1_Ex3.csproj", "{2808CDFF-3097-4004-9B87-FBC544B2EBE5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{0F29159C-E850-49C8-AA31-EE59A6921651}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F29159C-E850-49C8-AA31-EE59A6921651}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F29159C-E850-49C8-AA31-EE59A6921651}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2808CDFF-3097-4004-9B87-FBC544B2EBE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2808CDFF-3097-4004-9B87-FBC544B2EBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2808CDFF-3097-4004-9B87-FBC544B2EBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2808CDFF-3097-4004-9B87-FBC544B2EBE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
